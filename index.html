@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cowtown Custom Cabinets - Premium custom kitchen cabinets and bathroom vanities with expert design and fabrication services.">
+    <meta name="keywords" content="custom cabinets, kitchen cabinets, bathroom vanities, custom design, cabinet fabrication">
+    <meta name="author" content="Cowtown Custom Cabinets">
+    <title>Cowtown Custom Cabinets - Premium Custom Cabinet Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-hammer text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">Cowtown</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">FAQ</a>
+                <a href="https://cowtowncustomcabinets.net/" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl text-gray-900"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="flex flex-col space-y-4 p-6">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">FAQ</a>
+                    <a href="https://cowtowncustomcabinets.net/" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300 text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 md:py-32 lg:py-40 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6 animate-fade-in">
+                    Cowtown Custom Cabinets
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    At Cowtown, we specialize in custom cabinets that transform your space. From stunning kitchen designs to elegant bathroom vanities, we deliver quality craftsmanship and professional service.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://cowtowncustomcabinets.net/" class="btn-primary bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300">
+                        Explore Our Services
+                    </a>
+                    <a href="#features" class="btn-primary border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-24 lg:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Our Premium Services
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    We offer a comprehensive range of custom cabinet solutions tailored to your unique style and needs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="feature-card card-hover bg-white rounded-xl shadow-md p-8 border border-gray-100">
+                    <div class="feature-icon text-blue-600 mb-4">
+                        <i class="fas fa-kitchen"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Kitchen Cabinets</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Transform your kitchen with our bespoke cabinet designs. We combine functionality with stunning aesthetics to create the perfect culinary space that reflects your personal style and maximizes storage efficiency.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Custom sizing and layouts</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Premium hardware options</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Multiple finish choices</li>
+                    </ul>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="feature-card card-hover bg-white rounded-xl shadow-md p-8 border border-gray-100">
+                    <div class="feature-icon text-purple-600 mb-4">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Bathroom Vanities</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Elevate your bathroom with custom vanities that combine luxury and practicality. Our expert craftsmen create stunning pieces that enhance your bathroom's elegance while providing exceptional storage and functionality.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Tailored dimensions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Integrated countertops</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Designer finishes</li>
+                    </ul>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="feature-card card-hover bg-white rounded-xl shadow-md p-8 border border-gray-100">
+                    <div class="feature-icon text-indigo-600 mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Bathroom Cabinets</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Create a spa-like retreat with our custom bathroom cabinet solutions. From medicine cabinets to storage units, we design and fabricate pieces that perfectly complement your bathroom aesthetic and meet all your storage needs.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Space-saving designs</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Moisture-resistant materials</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Elegant styling options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-24 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Cowtown Custom Cabinets
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Our full-service offering includes design, fabrication, and installation with unmatched quality and professionalism
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <i class="fas fa-pencil-ruler text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Design Consultation</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Our talented designers work closely with you to understand your vision, lifestyle, and preferences. We create detailed plans that maximize functionality while delivering stunning visual results tailored to your space.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-600 text-white">
+                                <i class="fas fa-wrench text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Professional Fabrication</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Using state-of-the-art equipment and premium materials, our skilled craftsmen fabricate each cabinet with precision and attention to detail, ensuring durability and beauty that lasts for decades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
+                                <i class="fas fa-tools text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Seamless Installation</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Our experienced installation team ensures your custom cabinets are perfectly fitted and flawlessly finished. We handle every detail with care and professionalism from start to finish.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl shadow-xl p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-6">Our Commitment to Excellence</h3>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-star text-yellow-300 mt-1"></i>
+                            <span>Premium quality materials sourced from trusted suppliers</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-star text-yellow-300 mt-1"></i>
+                            <span>Custom designs tailored to your specific needs and style</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-star text-yellow-300 mt-1"></i>
+                            <span>Competitive pricing without compromising on quality</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-star text-yellow-300 mt-1"></i>
+                            <span>Dedicated customer service throughout the entire process</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-star text-yellow-300 mt-1"></i>
+                            <span>Warranty coverage on all our custom cabinet work</span>
+                        </li>
+                    </ul>
+                    <a href="https://cowtowncustomcabinets.net/" class="btn-primary inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all duration-300">
+                        Schedule Your Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-24 lg:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Cowtown Custom Cabinets
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Founded in 2008, Cowtown Custom Cabinets began as a small family-owned business with a simple vision: to deliver exceptional custom cabinetry that transforms homes and businesses. Starting in a modest workshop in the heart of the Dallas-Fort Worth area, our founders recognized a gap in the market for truly personalized, high-quality cabinet solutions. Over the past 15+ years, we've grown from a two-person operation to a thriving company with a team of skilled craftsmen, designers, and installation specialists. Our journey has been marked by countless satisfied customers, beautiful transformations, and an unwavering commitment to excellence that has made us a trusted name in custom cabinetry throughout North Texas.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        At Cowtown Custom Cabinets, our mission is to create stunning, functional spaces that enhance our customers' lives. We believe that every home and business deserves cabinetry that is not only beautiful but also built to last. Our core values—quality craftsmanship, customer-centric service, innovation, and integrity—guide every decision we make. We're passionate about listening to our clients' needs, pushing creative boundaries, and delivering solutions that exceed expectations. Whether you're renovating a kitchen, upgrading a bathroom, or designing a custom storage solution, we're committed to partnering with you every step of the way to bring your vision to life with exceptional quality and attention to detail.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                        <p class="text-gray-600 font-semibold">Years of Experience</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">2000+</div>
+                        <p class="text-gray-600 font-semibold">Projects Completed</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
+                        <div class="text-4xl font-bold text-indigo-600 mb-2">98%</div>
+                        <p class="text-gray-600 font-semibold">Customer Satisfaction</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
+                        <div class="text-4xl font-bold text-green-600 mb-2">50+</div>
+                        <p class="text-gray-600 font-semibold">Team Members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-24 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Hear from homeowners and business owners who have transformed their spaces with our custom cabinet solutions
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-white rounded-xl shadow-md border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "The team at Cowtown completely transformed our kitchen! The custom cabinets are not only beautiful but incredibly functional. Their attention to detail and professionalism throughout the entire process was outstanding. Highly recommended!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Sarah Mitchell</p>
+                        <p class="text-sm text-gray-600">Homeowner, Arlington TX</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-white rounded-xl shadow-md border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "We renovated our master bathroom with Cowtown's custom vanities, and the results exceeded our expectations. The craftsmanship is exceptional, and the design perfectly complements our home's aesthetic. Best decision we made!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">James Rodriguez</p>
+                        <p class="text-sm text-gray-600">Property Owner, Dallas TX</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-white rounded-xl shadow-md border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "As a real estate developer, I've worked with many cabinet companies, but Cowtown stands out. Their custom solutions have helped us differentiate our properties and increase buyer satisfaction. Exceptional quality and reliability!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Michael Chen</p>
+                        <p class="text-sm text-gray-600">Real Estate Developer, Fort Worth TX</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-white rounded-xl shadow-md border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "We needed custom storage solutions for our office space, and Cowtown delivered beyond our expectations. The design maximizes our space, looks professional, and the installation was seamless. Great investment!"
+                    </p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <p class="font-bold text-gray-900">Emily Thompson</p>
+                        <p class="text-sm text-gray-600">Office Manager, Plano TX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-24 lg:py-28 bg-cover bg-center relative overflow-hidden" style="background-image: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                    Ready to Transform Your Space?
+                </h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Let our expert team create custom cabinets that perfectly match your vision. Contact us today for a free consultation and discover the Cowtown difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://cowtowncustomcabinets.net/" class="btn-primary bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all duration-300">
+                        Schedule Free Consultation
+                    </a>
+                    <a href="mailto:Cowtowndfw@gmail.com" class="btn-primary border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
+                        Email Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-24 lg:py-28 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Find answers to common questions about our custom cabinet services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900">How long does the custom cabinet design and fabrication process take?</span>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 border-t border-gray-100 pt-6 leading-relaxed">
+                        <p>The timeline for our custom cabinet projects typically ranges from 4 to 8 weeks, depending on the complexity of your design and the current workload. This includes the initial consultation and design phase (1-2 weeks), fabrication (2-4 weeks), and installation (1-2 weeks). We understand that timing is important, and we work diligently to meet your project deadlines. During your consultation, we'll provide a detailed timeline specific to your project requirements. For rush orders, we offer expedited services with additional fees. We always keep you informed throughout every stage of the process.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900">What materials do you use for your custom cabinets?</span>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 border-t border-gray-100 pt-6 leading-relaxed">
+                        <p>We use only premium materials sourced from trusted suppliers to ensure the highest quality and durability. Our cabinet options include solid wood (oak, maple, cherry, walnut), plywood construction with veneer, and engineered wood composites. For bathroom cabinets, we offer moisture-resistant materials specifically designed to withstand humid environments. We also provide a wide variety of finishes including stains, paints, and specialty coatings. During your consultation, our design team will discuss material options that best suit your needs, budget, and aesthetic preferences. All materials come with quality guarantees and are built to last for decades with proper care.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900">Can you work with my existing kitchen or bathroom layout?</span>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 border-t border-gray-100 pt-6 leading-relaxed">
+                        <p>Absolutely! Our expert designers specialize in working with existing spaces and layouts. Whether you want to maximize your current space with clever storage solutions or completely reimagine your room, we have the expertise to make it work. We'll conduct a thorough assessment of your space, taking precise measurements and considering factors like plumbing, electrical, and appliance placement. Our team can work around existing fixtures or help coordinate renovations if needed. We pride ourselves on finding creative solutions that work within your space constraints while delivering the custom look and functionality you desire. We'll present multiple design options so you can choose the best solution for your home.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900">What is your warranty coverage on custom cabinets?</span>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 border-t border-gray-100 pt-6 leading-relaxed">
+                        <p>We stand behind our work with comprehensive warranty coverage. All custom cabinets come with a 5-year structural warranty covering manufacturing defects, hardware, and finishes. This warranty ensures that your investment is protected against any issues related to craftsmanship or materials. Additionally, we offer extended warranty options for added peace of mind. Our warranty covers door and drawer operation, finish quality, and structural integrity. If any issues arise during the warranty period, our team will promptly address them at no additional cost. We also provide maintenance recommendations to help you get the most out of your custom cabinets and keep them looking beautiful for years to come.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900">Do you offer financing or payment plans for large projects?</span>
+                        <i class="faq-icon fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 border-t border-gray-100 pt-6 leading-relaxed">
+                        <p>Yes, we understand that custom cabinet projects can be a significant investment, which is why we offer flexible financing and payment plan options. We work with several financing partners to provide competitive rates and flexible terms that fit your budget. Our payment structure typically includes a deposit to begin the design process, progress payments during fabrication, and a final payment upon completion and installation. We can discuss your specific financial needs and create a payment schedule that works for you. Our team will provide a detailed quote and explain all available financing options during your consultation. We believe that quality custom cabinets should be accessible to everyone, so we're committed to finding a solution that fits your financial situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-hammer text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">Cowtown</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Premium custom cabinets and design solutions for homes and businesses throughout North Texas.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Our Services</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Why Choose Us</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Kitchen Cabinets</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Bathroom Vanities</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Custom Storage</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Design Consultation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Installation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-blue-400 mt-1"></i>
+                            <a href="mailto:Cowtowndfw@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Cowtowndfw@gmail.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
+                            <span class="text-gray-400">Dallas-Fort Worth, TX</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-clock text-blue-400 mt-1"></i>
+                            <span class="text-gray-400">Available 7 days a week</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-6">
+                    <p class="text-gray-400 text-center md:text-left">
+                        &copy; 2025 Cowtown Custom Cabinets. All rights reserved.
+                    </p>
+                    <div class="flex justify-center md:justify-end space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
